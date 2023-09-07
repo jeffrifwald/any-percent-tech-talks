@@ -1,0 +1,35 @@
+<button
+  hx-post="/clicks/increase"
+  hx-target="#clicks"
+  hx-swap="outerHTML"
+>
+  Increase Clicks
+</button>
+
+<button
+  hx-post="/clicks/decrease"
+  hx-target="#clicks"
+  hx-swap="outerHTML"
+>
+  Decrease Clicks
+</button>
+
+<button
+  hx-delete="/clicks"
+  hx-target="#clicks"
+  hx-swap="outerHTML"
+>
+  Reset Clicks
+</button>
+
+<form
+  hx-post="/clicks/set"
+  hx-target="#clicks"
+  hx-swap="outerHTML"
+  hx-on::after-request="this.reset()"
+>
+  <input type="number" name="numClicks" placeholder="0" />
+  <button>
+    Set Clicks
+  </button>
+</form>
