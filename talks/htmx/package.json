@@ -1,5 +1,5 @@
 {
-  "name": "htmx-demo",
+  "name": "@any-percent-tech-talks/htmx-demo",
   "version": "0.0.1",
   "description": "A simple HMTX demo",
   "main": "./src/index.js",
